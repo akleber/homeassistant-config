@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "Andreas Kleber",
+                "user_id": "42e551146f1e4b078ce8ff081bd269b9",
+                "device_trackers": [],
+                "id": "andreas_kleber"
+            }
+        ]
+    }
+}

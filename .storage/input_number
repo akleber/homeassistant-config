@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "key": "input_number",
+    "data": {
+        "items": [
+            {
+                "min": 0.0,
+                "max": 100.0,
+                "name": "Battery Chg Pct",
+                "step": 5.0,
+                "unit_of_measurement": "%",
+                "mode": "slider",
+                "id": "chg_power"
+            }
+        ]
+    }
+}

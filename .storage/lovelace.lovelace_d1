@@ -1,0 +1,162 @@
+{
+    "version": 1,
+    "key": "lovelace.lovelace_d1",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "panel": false,
+                    "title": "Wetter",
+                    "icon": "mdi:weather-cloudy",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "glance",
+                            "entities": [
+                                {
+                                    "entity": "sensor.aussen"
+                                },
+                                {
+                                    "entity": "sensor.wohnzimmer"
+                                },
+                                {
+                                    "entity": "sensor.waschkueche"
+                                },
+                                {
+                                    "entity": "sensor.dach"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "entities": [
+                                {
+                                    "entity": "sensor.aussen_2"
+                                },
+                                {
+                                    "entity": "sensor.wohnzimmer_2"
+                                },
+                                {
+                                    "entity": "sensor.waschkueche_2"
+                                },
+                                {
+                                    "entity": "sensor.dach_2"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "weather-forecast",
+                            "entity": "weather.home",
+                            "show_forecast": true
+                        },
+                        {
+                            "type": "entity",
+                            "entity": "sensor.regen_24h"
+                        }
+                    ]
+                },
+                {
+                    "title": "Energy",
+                    "path": "energy",
+                    "icon": "mdi:power-plug",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "glance",
+                            "entities": [
+                                {
+                                    "entity": "sensor.load"
+                                },
+                                {
+                                    "entity": "sensor.pv"
+                                },
+                                {
+                                    "entity": "sensor.grid"
+                                },
+                                {
+                                    "entity": "sensor.energy_today"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "horizontal-stack",
+                            "cards": [
+                                {
+                                    "type": "gauge",
+                                    "entity": "sensor.batt_soc",
+                                    "min": 0,
+                                    "max": 100
+                                },
+                                {
+                                    "type": "sensor",
+                                    "entity": "sensor.batt_power"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "history-graph",
+                            "entities": [
+                                {
+                                    "entity": "sensor.load"
+                                },
+                                {
+                                    "entity": "sensor.pv"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0
+                        },
+                        {
+                            "type": "entity",
+                            "entity": "sensor.gas"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "input_number.battery_chg_pct"
+                                },
+                                {
+                                    "entity": "input_boolean.battery_chg_auto"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icon": "mdi:car",
+                    "title": "EV",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "horizontal-stack",
+                            "cards": [
+                                {
+                                    "type": "gauge",
+                                    "entity": "sensor.zoe_soc",
+                                    "min": 0,
+                                    "max": 100
+                                },
+                                {
+                                    "type": "sensor",
+                                    "entity": "sensor.zoe_range"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.ev_power"
+                                },
+                                {
+                                    "entity": "sensor.ev_energy"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

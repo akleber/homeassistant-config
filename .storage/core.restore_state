@@ -1,0 +1,212 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.andreas_kleber",
+                "state": "unknown",
+                "attributes": {
+                    "editable": true,
+                    "id": "andreas_kleber",
+                    "user_id": "42e551146f1e4b078ce8ff081bd269b9",
+                    "friendly_name": "Andreas Kleber"
+                },
+                "last_changed": "2020-12-23T16:18:41.450691+00:00",
+                "last_updated": "2020-12-23T16:19:02.175820+00:00",
+                "context": {
+                    "id": "d96a3f8e6924d7364119e309b993e7ba",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_boolean.battery_chg_auto",
+                "state": "off",
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Battery Chg Auto"
+                },
+                "last_changed": "2020-12-23T16:18:59.387335+00:00",
+                "last_updated": "2020-12-23T16:18:59.387335+00:00",
+                "context": {
+                    "id": "c9245515a65eee1720b4acc2dfdcb22c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_number.battery_chg_pct",
+                "state": "100.0",
+                "attributes": {
+                    "initial": null,
+                    "editable": true,
+                    "min": 0.0,
+                    "max": 100.0,
+                    "step": 5.0,
+                    "mode": "slider",
+                    "unit_of_measurement": "%",
+                    "friendly_name": "Battery Chg Pct"
+                },
+                "last_changed": "2020-12-23T16:18:59.388593+00:00",
+                "last_updated": "2020-12-23T16:18:59.388593+00:00",
+                "context": {
+                    "id": "36f7e138e293f91144222680a31a128b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.set_batt_chg",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-12-23T16:33:57.012366+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Set batt chg"
+                },
+                "last_changed": "2020-12-23T16:18:59.389763+00:00",
+                "last_updated": "2020-12-23T16:33:57.013665+00:00",
+                "context": {
+                    "id": "907196f495f43e3044d2b59fd579f722",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.battery_chg_pct_slider_moved",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-12-21T20:04:53.422195+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Battery chg pct slider moved"
+                },
+                "last_changed": "2020-12-23T16:18:59.389862+00:00",
+                "last_updated": "2020-12-23T16:18:59.389862+00:00",
+                "context": {
+                    "id": "183899b962fdea7e41f7fb6c9b7d1625",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.set_battery_chg_auto_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-12-21T20:05:26.012948+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Set battery chg auto on"
+                },
+                "last_changed": "2020-12-23T16:18:59.389955+00:00",
+                "last_updated": "2020-12-23T16:18:59.389955+00:00",
+                "context": {
+                    "id": "eed99453293a3c597c0f3ebbfad58294",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.set_battery_chg_auto_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-12-23T16:19:02.299320+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Set battery chg auto off"
+                },
+                "last_changed": "2020-12-23T16:18:59.390047+00:00",
+                "last_updated": "2020-12-23T16:19:02.299729+00:00",
+                "context": {
+                    "id": "75c6f1337628991b727bf44e82161621",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.battery_chg_auto_changed",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-12-21T20:05:27.466459+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Battery chg auto changed"
+                },
+                "last_changed": "2020-12-23T16:18:59.390175+00:00",
+                "last_updated": "2020-12-23T16:18:59.390175+00:00",
+                "context": {
+                    "id": "101bb10efd4c4b2272618e9e94ca8692",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-23T16:34:02.176938+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.set_battery_chg_auto",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-12-21T19:51:40.923819+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Set battery chg auto"
+                },
+                "last_changed": "2020-12-21T19:51:12.528547+00:00",
+                "last_updated": "2020-12-21T19:51:40.924406+00:00",
+                "context": {
+                    "id": "b2485c3f4495c920d0d99e6bfeb1ffdf",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-12-21T19:52:25.442640+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_number.chg_power",
+                "state": "0.0",
+                "attributes": {
+                    "initial": null,
+                    "editable": true,
+                    "min": 0.0,
+                    "max": 100.0,
+                    "step": 5.0,
+                    "mode": "slider",
+                    "unit_of_measurement": "%",
+                    "friendly_name": "Chg Power"
+                },
+                "last_changed": "2020-12-21T14:15:52.754313+00:00",
+                "last_updated": "2020-12-21T14:15:52.754313+00:00",
+                "context": {
+                    "id": "07932928149eb6f439cf90068576d58a",
+                    "parent_id": null,
+                    "user_id": "42e551146f1e4b078ce8ff081bd269b9"
+                }
+            },
+            "last_seen": "2020-12-21T18:02:42.354813+00:00"
+        }
+    ]
+}

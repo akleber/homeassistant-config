@@ -1,0 +1,77 @@
+{
+    "version": 1,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "4aa5ce9dfd52aed8c8e9fd66c99acd6f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "5af5d34dfee191034aa436408cf31c2b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "d8658642d4e61952d2b12064bec98447"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ipp",
+                        "e3248000-80ce-11db-8000-5cea1d1d2b58"
+                    ]
+                ],
+                "manufacturer": "Brother",
+                "model": "HL-3142CW series",
+                "name": "Brother HL-3142CW series",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1c1c95ef06d1d03ff833716d2928e5b1",
+                "via_device_id": null,
+                "area_id": "df2c7396bfcee5c89a99ec11c04c5610",
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "49c19aa78900ab69a05e86ce09b3a4e7"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "37:5f:62:0f:ac:d2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "49c19aa78900ab69a05e86ce09b3a4e7",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Bridge",
+                "name": "HASS Bridge LY3W",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "b873692d3634ec32f49d21d94a5e8126",
+                "via_device_id": null,
+                "area_id": "cd4b00d52ff81c90d2ce397f465db68f",
+                "name_by_user": null
+            }
+        ],
+        "deleted_devices": []
+    }
+}

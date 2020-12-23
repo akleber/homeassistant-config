@@ -1,0 +1,133 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+mqtt:
+  broker: mosquitto.kleber
+  port: 1883
+  client_id: home-assistant
+  keepalive: 60
+
+sensor:
+  - platform: mqtt
+    state_topic: "netatmo/Outdoor/Temperature"
+    name: "Aussen"
+    unit_of_measurement: "C"
+    device_class: temperature
+  - platform: mqtt
+    state_topic: "netatmo/Outdoor/Humidity"
+    name: "Aussen"
+    unit_of_measurement: "%"
+    device_class: humidity
+
+  - platform: mqtt
+    state_topic: "netatmo/Wohnzimmer/Temperature"
+    name: "Wohnzimmer"
+    unit_of_measurement: "C"
+    device_class: temperature
+  - platform: mqtt
+    state_topic: "netatmo/Wohnzimmer/Humidity"
+    name: "Wohnzimmer"
+    unit_of_measurement: "%"
+    device_class: humidity
+  - platform: mqtt
+    state_topic: "netatmo/Regenmesser/sum_rain_24"
+    name: "Regen 24h"
+    unit_of_measurement: "l"
+    icon: mdi:water
+
+  - platform: mqtt
+    state_topic: "rpi/waschkueche/temp"
+    name: "Waschkueche"
+    unit_of_measurement: "C"
+    device_class: temperature
+  - platform: mqtt
+    state_topic: "rpi/waschkueche/humidity"
+    name: "Waschkueche"
+    unit_of_measurement: "%"
+    device_class: humidity
+
+  - platform: mqtt
+    state_topic: "gas/volume"
+    name: "Gas"
+    unit_of_measurement: "m3"
+    icon: mdi:gas-zylinder
+
+  - platform: mqtt
+    state_topic: "sensor1/temp"
+    name: "Dach"
+    unit_of_measurement: "C"
+    device_class: temperature
+  - platform: mqtt
+    state_topic: "sensor1/humidity"
+    name: "Dach"
+    unit_of_measurement: "%"
+    device_class: humidity
+
+  - platform: mqtt
+    state_topic: "fronius/p_pv"
+    name: "PV"
+    unit_of_measurement: "W"
+    value_template: "{{ value | round(0) }}"
+    device_class: power
+  - platform: mqtt
+    state_topic: "fronius/e_day"
+    name: "Energy today"
+    unit_of_measurement: "kWh"
+    value_template: "{{ value | round(1) }}"
+    device_class: energy
+  - platform: mqtt
+    state_topic: "fronius/p_grid"
+    name: "Grid"
+    unit_of_measurement: "W"
+    value_template: "{{ value | round(0) }}"
+    device_class: power
+  - platform: mqtt
+    state_topic: "fronius/p_load"
+    name: "Load"
+    unit_of_measurement: "W"
+    device_class: power
+    value_template: "{{ value | round(0) }}"
+
+  - platform: mqtt
+    state_topic: "goe/power_sum"
+    name: "EV Power"
+    unit_of_measurement: "W"
+    device_class: power
+  - platform: mqtt
+    state_topic: "goe/cur_chg_e"
+    name: "EV Energy"
+    unit_of_measurement: "kWh"
+    device_class: energy
+
+  - platform: mqtt
+    state_topic: "zoe/soc"
+    name: "Zoe SoC"
+    unit_of_measurement: "%"
+    device_class: battery
+  - platform: mqtt
+    state_topic: "zoe/range"
+    name: "Zoe Range"
+    unit_of_measurement: "km"
+    icon: mdi:map-marker-distance
+
+  - platform: mqtt
+    state_topic: "fronius/soc"
+    name: "Batt SoC"
+    unit_of_measurement: "%"
+    device_class: battery
+  - platform: mqtt
+    state_topic: "fronius/p_akku"
+    name: "Batt Power"
+    unit_of_measurement: "W"
+    device_class: power
+    value_template: "{{ value | round(0) }}"

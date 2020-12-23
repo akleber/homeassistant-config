@@ -1,0 +1,28 @@
+{
+    "version": 1,
+    "key": "core.area_registry",
+    "data": {
+        "areas": [
+            {
+                "name": "Wohnzimmer",
+                "id": "e8e750f09e02c817e6924fa766d9d15d"
+            },
+            {
+                "name": "K\u00fcche",
+                "id": "5216a95cf8a8609c24d52e140783aeae"
+            },
+            {
+                "name": "Schlafzimmer",
+                "id": "8d7517f76b056b88571540f768d4c406"
+            },
+            {
+                "name": "Arbeitszimmer",
+                "id": "df2c7396bfcee5c89a99ec11c04c5610"
+            },
+            {
+                "name": "Waschk\u00fcche",
+                "id": "cd4b00d52ff81c90d2ce397f465db68f"
+            }
+        ]
+    }
+}

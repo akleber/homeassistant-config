@@ -1,0 +1,61 @@
+# This automation script runs when a value is received via MQTT. It sets the value slider on the GUI.
+- alias: Set batt chg
+  trigger:
+    platform: mqtt
+    topic: 'battery/chg_pct'
+  action:
+    service: input_number.set_value
+    data:
+      entity_id: input_number.battery_chg_pct
+      value: "{{ trigger.payload }}"
+
+# This second automation script runs when the slider is moved.
+- alias: Battery chg pct slider moved
+  trigger:
+    platform: state
+    entity_id: input_number.battery_chg_pct
+  action:
+    service: mqtt.publish
+    data:
+      topic: 'battery/set/chg_pct'
+      retain: true
+      payload: "{{ states('input_number.battery_chg_pct') | int }}"
+
+# This automation script runs when a value is received via MQTT. It sets the value slider on the GUI.
+- alias: Set battery chg auto on
+  trigger:
+    platform: mqtt
+    topic: battery/auto_chg_pct
+    payload: "True"
+  action:
+    service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.battery_chg_auto
+
+- alias: Set battery chg auto off
+  trigger:
+    platform: mqtt
+    topic: battery/auto_chg_pct
+    payload: "False"
+  action:
+    service: input_boolean.turn_off
+    data:
+      entity_id: input_boolean.battery_chg_auto
+
+# This second automation script runs when the slider is moved.
+- alias: Battery chg auto changed
+  trigger:
+    platform: state
+    entity_id: input_boolean.battery_chg_auto
+  action:
+    service: mqtt.publish
+    data:
+      topic: 'battery/auto_chg_pct'
+      retain: true
+      payload_template: >
+        {% if trigger.to_state.state == 'on' %}
+          True
+        {% elif trigger.to_state.state == 'off' %}
+          False
+        {% endif %}
+

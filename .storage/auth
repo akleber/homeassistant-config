@@ -1,0 +1,148 @@
+{
+    "version": 1,
+    "key": "auth",
+    "data": {
+        "users": [
+            {
+                "id": "42e551146f1e4b078ce8ff081bd269b9",
+                "group_ids": [
+                    "system-admin"
+                ],
+                "is_owner": true,
+                "is_active": true,
+                "name": "Andreas Kleber",
+                "system_generated": false
+            },
+            {
+                "id": "98b7930bd37a45729caf7dd56a5cac0f",
+                "group_ids": [
+                    "system-users"
+                ],
+                "is_owner": false,
+                "is_active": true,
+                "name": "Birgit Kleber",
+                "system_generated": false
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "credentials": [
+            {
+                "id": "efc4a576bff544458c85b15005219751",
+                "user_id": "42e551146f1e4b078ce8ff081bd269b9",
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null,
+                "data": {
+                    "username": "andreas"
+                }
+            },
+            {
+                "id": "d2ebe11b456743e99d5115c1f7ab9b5a",
+                "user_id": "98b7930bd37a45729caf7dd56a5cac0f",
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null,
+                "data": {
+                    "username": "birgit"
+                }
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "id": "b2408308f7014eaaa75add83c011845d",
+                "user_id": "42e551146f1e4b078ce8ff081bd269b9",
+                "client_id": "http://ha.kleber:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-03T19:05:05.151282+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "04d8b4358ae9f9e40ffd7ff1a85fa8ba8243ba48672e52480e28ea54dd46c4dcdc20d634463e83e59a27b7207aa0a322dc66760c5c5c1b543c1d7c8c69ecdb83",
+                "jwt_key": "cf22a42b8ccbf9a0977ff7bfb8b169a7885ecb357885b2e4c7bbeb4d8492a7a57a9c8449cbef1f28e2557b6486dd23f6efe8bd3b291fdd68b1ca6e1398e80c39",
+                "last_used_at": "2020-12-23T16:19:06.234688+00:00",
+                "last_used_ip": "192.168.134.250"
+            },
+            {
+                "id": "351356b7842c47fcbedb944c5119a181",
+                "user_id": "42e551146f1e4b078ce8ff081bd269b9",
+                "client_id": "http://ha.kleber:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-03T19:30:56.509091+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "f7b7fb5cf5fe21d8317ab7b15fcb12d34fe744844a134e1ef44c3dddc54bc019c16c5b256b79c80d0208e2fa3dc1064c8cc6a410ae8165598fc0e45f790d5167",
+                "jwt_key": "245a37c761e5e1ff0364e20dd913d6855e212667d04a615a7f08c7dcc977f62bd1c76691b9dfc6515ae1f49fc18f822abce4bea4a4b32a631de7550767580320",
+                "last_used_at": "2020-12-23T12:22:49.381650+00:00",
+                "last_used_ip": "192.168.134.253"
+            },
+            {
+                "id": "dfab68c1021d4d22a8744b82f11eeb71",
+                "user_id": "42e551146f1e4b078ce8ff081bd269b9",
+                "client_id": "http://ha.kleber:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-03T19:49:01.638063+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "fa5a62314d0029d7a96a6f94c44dc24ce964b174c6569624e89e58f663c277e89726eefa38eaaa7923de23399b9648a7a04a4fa72e26058590aac51b633fe92e",
+                "jwt_key": "f934a76972dd21ee732b3592f915630e59a1052e1167747b04431bc4fac988694f49bc4c7931d3d3e823ee71964fe1f2ff7d7bc21643297f5ddd947d5d6d0717",
+                "last_used_at": "2020-12-23T11:03:42.722989+00:00",
+                "last_used_ip": "192.168.134.253"
+            },
+            {
+                "id": "dc50f5386ac548adb53595454d9ec4ef",
+                "user_id": "42e551146f1e4b078ce8ff081bd269b9",
+                "client_id": "http://ha.kleber:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-23T15:48:54.129404+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "a9318631de25ff58367cc5db8e5ac532da22f13a100651c3400cc04d4e3db49a6648672988fd75e774f72a9cffab58a7ed6314d23b64b79246a9f820e454f622",
+                "jwt_key": "4ec177007a1a5f75fc4d39497d0afdacd2f40f33e8236736112249ba36c2d8f29ff6121cdb19ff1bcacabf62774211461bd2f0234e877343369507d8e84aad33",
+                "last_used_at": "2020-12-23T15:48:54.129493+00:00",
+                "last_used_ip": "192.168.134.26"
+            },
+            {
+                "id": "6f0c92c8564945de8acca4c09aa02cd9",
+                "user_id": "98b7930bd37a45729caf7dd56a5cac0f",
+                "client_id": "http://ha.kleber:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-20T12:52:52.678108+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "794d47c9d8ab5becfe0f8abab8f575e3f1dbafcda976b5ec498065ff054b38c48397600412e0eaa203a723a1a2e3f818cdd922ce45171673730ff6289b3307c7",
+                "jwt_key": "76bfc81af1ae42ea116e08095ae91bfc0e35fca1a15b35d4072f6c606a5192e2f11c2e9f2eb537782ed62d2d50f40c85211f0007e62deb268203a289dbc29b7b",
+                "last_used_at": "2020-12-20T12:52:52.678184+00:00",
+                "last_used_ip": "192.168.134.252"
+            },
+            {
+                "id": "c1234328a54a4d6fb1a3d6a123013535",
+                "user_id": "98b7930bd37a45729caf7dd56a5cac0f",
+                "client_id": "http://ha.kleber:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-20T12:54:17.783189+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "ac147dd3b838ae4d78aa5210aaf99d5bfcfe9092fc525c3a9c5e112ed4e3f99f40bdd50056d58ea9106455aaa7f4e66adaaa1400160df88b92cfe1f0132f90bc",
+                "jwt_key": "f9e3bfa99472ff0cd4ade601ba250726d8f67a2d7d0be47a8ad67118f5ae7151ea50be62f19d5c1d364e5150fd441fbbdfe0133dc5e1cd810021a6a003468bb0",
+                "last_used_at": "2020-12-20T12:54:17.783270+00:00",
+                "last_used_ip": "192.168.134.252"
+            }
+        ]
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "4aa5ce9dfd52aed8c8e9fd66c99acd6f",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "onboarding",
+                "connection_class": "cloud_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "d8658642d4e61952d2b12064bec98447",
+                "version": 1,
+                "domain": "ipp",
+                "title": "Brother HL-3142CW series",
+                "data": {
+                    "host": "192.168.134.48",
+                    "port": 631,
+                    "ssl": false,
+                    "verify_ssl": false,
+                    "base_path": "/ipp/print",
+                    "name": "Brother HL-3142CW series",
+                    "uuid": "e3248000-80ce-11db-8000-5cea1d1d2b58"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "e3248000-80ce-11db-8000-5cea1d1d2b58"
+            },
+            {
+                "entry_id": "49c19aa78900ab69a05e86ce09b3a4e7",
+                "version": 1,
+                "domain": "homekit",
+                "title": "HASS Bridge LY3W:51828",
+                "data": {
+                    "name": "HASS Bridge LY3W",
+                    "port": 51828
+                },
+                "options": {
+                    "filter": {
+                        "include_domains": [
+                            "alarm_control_panel",
+                            "climate",
+                            "cover",
+                            "humidifier",
+                            "fan",
+                            "light",
+                            "lock",
+                            "media_player",
+                            "switch",
+                            "vacuum",
+                            "water_heater"
+                        ],
+                        "include_entities": [],
+                        "exclude_domains": [],
+                        "exclude_entities": []
+                    },
+                    "auto_start": true
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_push",
+                "unique_id": null
+            },
+            {
+                "entry_id": "b84a54d239f973418b9998567f34c965",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "mosquitto.kleber",
+                "data": {
+                    "port": 1883,
+                    "discovery": true,
+                    "broker": "mosquitto.kleber"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": null
+            }
+        ]
+    }
+}
